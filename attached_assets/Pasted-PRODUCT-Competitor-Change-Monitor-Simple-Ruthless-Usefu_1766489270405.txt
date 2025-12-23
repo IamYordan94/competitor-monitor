@@ -1,0 +1,210 @@
+PRODUCT: Competitor Change Monitor
+
+Simple. Ruthless. Useful.
+
+What it does (one sentence)
+
+A web app that monitors competitor webpages and emails you what changed, when, and why it matters.
+
+That’s it. No fluff.
+
+WHO IT’S FOR (this matters for selling)
+
+Solo founders
+
+Indie hackers
+
+Small SaaS owners
+
+Agencies watching competitors
+
+Marketers
+
+People who hate surprises more than they hate paying €10/month.
+
+CORE VALUE (why they pay)
+
+They don’t want to:
+
+Manually check sites
+
+Miss pricing changes
+
+Miss new features
+
+Miss repositioning
+
+Miss launches
+
+ChatGPT cannot watch.
+Your app watches.
+
+That’s the moat.
+
+MVP SCOPE (do NOT exceed this)
+
+If you add more than this, you slow launch and kill momentum.
+
+Inputs
+
+Email address
+
+List of URLs (start with max 5)
+
+Frequency: daily or weekly
+
+What you monitor
+
+Page HTML text (ignore images/scripts)
+
+Optional later: specific sections via CSS selector
+
+Processing
+
+Fetch page
+
+Compare with last version
+
+Detect meaningful text changes
+
+Summarize differences in plain English
+
+Output
+
+Email only
+
+Simple diff summary:
+
+What changed
+
+Where
+
+When
+
+Link to page
+
+No dashboard needed for v1.
+
+USER FLOW (keep it stupid simple)
+
+Landing page explains value in 5 seconds
+
+User clicks “Start Monitoring”
+
+Enters email + URLs
+
+Pays
+
+Confirmation email
+
+System runs automatically
+
+Emails arrive when changes happen
+
+That’s the entire product.
+
+PRICING (don’t overthink it)
+
+Start with:
+
+€9/month → up to 5 URLs
+Later:
+
+€19/month → up to 20 URLs
+
+Monthly subscription. Stripe. Cancel anytime.
+
+You are selling peace of mind, not data.
+
+TECH STACK (Replit-friendly)
+
+Keep this boring and reliable.
+
+Backend: Node.js or Python
+
+Scheduler: cron / Replit scheduled jobs
+
+Storage: simple DB (SQLite / Postgres)
+
+Diffing: text diff library
+
+Email: SMTP (Gmail, Resend, etc.)
+
+Payments: Stripe subscriptions
+
+Frontend: simple form + status page
+
+No user accounts needed at first. Email = identity.
+
+WHAT MAKES THIS NOT A CHATGPT CLONE
+
+This is important for your own sanity.
+
+Ongoing monitoring
+
+Historical comparison
+
+Automated alerts
+
+No prompts
+
+No thinking required by user
+
+They set it once. It works forever.
+
+EXACT PROMPT TO GIVE REPLIT
+
+Copy-paste this. Don’t improvise.
+
+Build a web-based competitor change monitoring app.
+
+Features:
+- Landing page explaining the service
+- Form to collect user email + list of URLs (max 5)
+- Stripe subscription payment (monthly)
+- After payment, store user + URLs
+- Scheduled job checks URLs daily
+- Fetch page text content
+- Compare with previous version
+- Detect meaningful text changes
+- Generate short human-readable summary of changes
+- Send email alert when changes occur
+- Fully automated after setup
+
+Constraints:
+- No user accounts or passwords
+- Email-based identification
+- Simple UI
+- Focus on reliability over features
+- Must be deployable on Replit
+
+Deliver:
+- Working deployed app
+- Clear README
+
+LANDING PAGE COPY (bare minimum)
+
+You don’t need marketing genius. You need clarity.
+
+Headline:
+
+Get alerted when competitors change their website.
+
+Sub:
+
+Pricing updates, new features, messaging changes.
+We watch. You get notified.
+
+Bullets:
+
+Monitor up to 5 competitor pages
+
+Daily or weekly checks
+
+Email alerts only when something changes
+
+Cancel anytime
+
+CTA:
+
+Start monitoring competitors
