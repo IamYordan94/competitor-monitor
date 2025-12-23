@@ -37,12 +37,14 @@ export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
   email: true,
+  subscriptionStatus: true,
 });
 
 export const insertMonitorSchema = createInsertSchema(monitors).pick({
   url: true,
   name: true,
   frequency: true,
+  status: true,
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;

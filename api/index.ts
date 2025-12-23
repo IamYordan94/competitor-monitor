@@ -7,7 +7,7 @@ const app = express();
 // Raw body for Stripe webhooks
 declare module "http" {
     interface IncomingMessage {
-        rawBody: Buffer;
+        rawBody: unknown;
     }
 }
 
